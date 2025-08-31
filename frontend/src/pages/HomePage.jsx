@@ -7,7 +7,7 @@ import axios from "axios"
 import toast from "react-hot-toast";
 import NoteCard from "../components/NoteCard";
 import api from '../lib/axios'
-const homepage = () => {
+const HomePage = () => {
   const [isRateLimited, setIsRateLimited] = useState(false);
   const [notes,setNotes] = useState([])
   const [loading,setLoading] = useState(true)
@@ -57,4 +57,4 @@ const homepage = () => {
   )
 }
 
-export default homepage
+export default HomePage
